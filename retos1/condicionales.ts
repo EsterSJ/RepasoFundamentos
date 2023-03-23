@@ -101,9 +101,9 @@ function zodiac (day: number, month: string): string{
     }
 }
 
-let signo: string;
-signo = zodiac(17,"enero");
-console.log(signo);
+// let signo: string;
+// signo = zodiac(17,"enero");
+// console.log(signo);
 
 function continent (country: string){
     if (country == "España" || country == "Portugal" || country == "Francia" || country == "Belgica" || country == "Italia"){
@@ -119,11 +119,11 @@ function continent (country: string){
     }
 }
 
-continent("España");
-continent("Japón");
-continent("Argentina");
-continent("Tanzania");
-continent("Australia");
+// continent("España");
+// continent("Japón");
+// continent("Argentina");
+// continent("Tanzania");
+// continent("Australia");
 
 function isEven(n: number){
     if (n%2==0){
@@ -135,5 +135,7 @@ function isEven(n: number){
     }
 }
 
-isEven(89);
-isEven(102);
+// isEven(89);
+// isEven(102);
+
+export {isEven}
