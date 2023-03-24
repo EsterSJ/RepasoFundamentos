@@ -1,7 +1,7 @@
 import { Point } from "./point";
 
 let myPoint: Point;
-myPoint = new Point(2,3);
+myPoint = new Point(-2,3);
 
 let anotherPoint: Point;
 anotherPoint = new Point (12,21);
@@ -9,8 +9,8 @@ anotherPoint = new Point (12,21);
 let x: number;
 let y: number;
 
-x = 5;
-y = 8;
+x = -5;
+y = 0;
 
 console.log(myPoint.getX());
 console.log(myPoint.getY());
@@ -22,3 +22,6 @@ console.log(myPoint.toString());
 
 console.log("Distancia al origen: " + myPoint.distanceToOrigin());
 console.log("Distancia entre dos puntos: " + anotherPoint.distanceToOrigin());
+
+console.log(myPoint.calcularQuadrant());
+
