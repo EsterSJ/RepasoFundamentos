@@ -26,6 +26,14 @@ class Point {
     public toString(): string{
         return "(" + this.x + "," + this.y + ")";
     }
+
+    public distanceToOrigin():number{
+        return Math.sqrt(Math.pow(this.x - 0,2) + Math.pow(this.y - 0,2));
+    }
+
+    public calculateDistance(anotherPoint: Point):number{
+        return Math.sqrt(Math.pow(this.x - anotherPoint.x,2) + Math.pow(this.y - anotherPoint.y,2));
+    }
 }
 
 export {Point}

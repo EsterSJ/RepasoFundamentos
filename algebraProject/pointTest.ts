@@ -3,6 +3,9 @@ import { Point } from "./point";
 let myPoint: Point;
 myPoint = new Point(2,3);
 
+let anotherPoint: Point;
+anotherPoint = new Point (12,21);
+
 let x: number;
 let y: number;
 
@@ -16,3 +19,6 @@ myPoint.setX(x);
 myPoint.setY(y);
 
 console.log(myPoint.toString());
+
+console.log("Distancia al origen: " + myPoint.distanceToOrigin());
+console.log("Distancia entre dos puntos: " + anotherPoint.distanceToOrigin());
